@@ -1,0 +1,6 @@
+{
+  "name": "AgroConnect",
+  "description": "Plataforma B2B SaaS de consolidación inteligente y matching de abastecimiento agrícola para el mercado peruano.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
