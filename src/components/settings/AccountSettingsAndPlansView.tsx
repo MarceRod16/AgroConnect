@@ -364,65 +364,79 @@ export const AccountSettingsAndPlansView: React.FC = () => {
         </div>
       </form>
 
-      {/* Planes SaaS de demostración (sin pagos reales ni bloqueos) */}
+      {/* Modelo Operativo B2B del Prototipo */}
       <section className="bg-white border border-[#DFE6E0] rounded-xl p-5 sm:p-6">
-        <div className="mb-4">
+        <div className="mb-5">
           <h3 className="text-base font-bold font-display text-[#111814]">
-            Planes de suscripción AgroConnect (Visualización de modelo de negocio)
+            Modelo Operativo del Prototipo B2B
           </h3>
-          <p className="text-xs text-[#526058] mt-0.5">
+          <p className="text-xs text-[#526058] mt-1">
             En este MVP todas las herramientas de Smart Matching, consolidación, exploradores y
-            eventos están desbloqueadas sin cobros ni integraciones bancarias.
+            eventos están desbloqueadas para evaluación técnica de la agroindustria peruana. No existen cobros de suscripción ni pasarelas bancarias activas.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-4 rounded-xl border border-[#DFE6E0] bg-[#F7F9F7]">
-            <p className="text-xs text-[#526058]">Productores y asociaciones</p>
-            <h4 className="text-base font-bold font-display text-[#111814] mt-0.5">Campo Inicial</h4>
-            <p className="text-xl font-bold font-mono-tabular text-[#14532D] mt-2">S/ 0 / mes</p>
-            <ul className="mt-3 space-y-1.5 text-xs text-[#526058]">
-              <li className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D]" />
-                <span>Publicación ilimitada de ofertas</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D]" />
-                <span>Participación en consolidaciones</span>
-              </li>
-            </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="p-5 rounded-xl border border-[#DFE6E0] bg-[#F7F9F7] flex flex-col justify-between">
+            <div>
+              <h4 className="text-base font-bold font-display text-[#111814]">
+                Productores y Organizaciones Agrarias
+              </h4>
+              <p className="text-xs text-[#526058] mt-0.5">
+                Para agricultores independientes, cooperativas y centros de acopio regional
+              </p>
+              <p className="text-xl font-bold font-mono-tabular text-[#14532D] mt-3 mb-4">
+                S/ 0 · Acceso Abierto Piloto
+              </p>
+              <ul className="space-y-2 text-xs text-[#526058]">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D] shrink-0 mt-0.5" />
+                  <span>Publicación ilimitada de lotes disponibles por valle y variedad</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D] shrink-0 mt-0.5" />
+                  <span>Participación en consolidaciones multi-proveedor</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D] shrink-0 mt-0.5" />
+                  <span>Registro inclusivo con DNI sin exigencia inicial de RUC</span>
+                </li>
+              </ul>
+            </div>
+            <div className="mt-4 pt-3 border-t border-[#DFE6E0] text-xs text-[#15803D] font-medium">
+              Acceso libre y sin arancel de intermediación
+            </div>
           </div>
 
-          <div className="p-4 rounded-xl border border-[#14532D] bg-white">
-            <p className="text-xs font-semibold text-[#15803D]">Plan activo en entorno demo</p>
-            <h4 className="text-base font-bold font-display text-[#111814] mt-0.5">Industria Pro</h4>
-            <p className="text-xl font-bold font-mono-tabular text-[#14532D] mt-2">S/ 390 / mes</p>
-            <ul className="mt-3 space-y-1.5 text-xs text-[#526058]">
-              <li className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D]" />
-                <span>Smart Matching & Consolidación multi-proveedor</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D]" />
-                <span>Búsqueda avanzada, eventos y contacto directo</span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="p-4 rounded-xl border border-[#DFE6E0] bg-[#F7F9F7]">
-            <p className="text-xs text-[#526058]">Acopiadores y cuentas duales</p>
-            <h4 className="text-base font-bold font-display text-[#111814] mt-0.5">Red Dual</h4>
-            <p className="text-xl font-bold font-mono-tabular text-[#14532D] mt-2">USD 160 / mes</p>
-            <ul className="mt-3 space-y-1.5 text-xs text-[#526058]">
-              <li className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D]" />
-                <span>Cambio instantáneo Comprador / Proveedor</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D]" />
-                <span>Analítica regional de abastecimiento</span>
-              </li>
-            </ul>
+          <div className="p-5 rounded-xl border border-[#14532D] bg-white flex flex-col justify-between">
+            <div>
+              <h4 className="text-base font-bold font-display text-[#111814]">
+                Industria Alimentaria y Agroexportación
+              </h4>
+              <p className="text-xs text-[#526058] mt-0.5">
+                Para plantas procesadoras, fabricantes y compradores a gran escala
+              </p>
+              <p className="text-xl font-bold font-mono-tabular text-[#14532D] mt-3 mb-4">
+                Validación Institucional · Sin Arancel
+              </p>
+              <ul className="space-y-2 text-xs text-[#526058]">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D] shrink-0 mt-0.5" />
+                  <span>Smart Matching y propuestas automáticas de consolidación</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D] shrink-0 mt-0.5" />
+                  <span>Búsqueda avanzada de proveedores, eventos y contacto directo</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#15803D] shrink-0 mt-0.5" />
+                  <span>Desglose transparente de las 10 variables agronómicas de coincidencia</span>
+                </li>
+              </ul>
+            </div>
+            <div className="mt-4 pt-3 border-t border-[#DFE6E0] text-xs text-[#14532D] font-medium">
+              Habilitado para pruebas y evaluación de abastecimiento
+            </div>
           </div>
         </div>
       </section>

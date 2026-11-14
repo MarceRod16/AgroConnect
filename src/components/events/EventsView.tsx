@@ -51,12 +51,12 @@ export const EventsView: React.FC = () => {
       {/* Banner superior */}
       <section className="bg-white border border-[#DFE6E0] rounded-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-stretch">
         <div className="lg:col-span-7 p-6 flex flex-col justify-center">
-          <p className="text-xs font-semibold text-[#15803D] mb-1">
-            Módulo complementario · Encuentros B2B
-          </p>
           <h2 className="text-xl font-bold font-display text-[#111814] tracking-tight">
             Eventos comerciales y ruedas de abastecimiento agrícola
           </h2>
+          <p className="text-xs font-medium text-[#15803D] mt-1">
+            Encuentros comerciales B2B para la agroindustria peruana
+          </p>
           <p className="text-xs text-[#526058] mt-2 leading-relaxed max-w-xl">
             Directorio de demostración para conectar presencial o virtualmente a plantas
             procesadoras con cooperativas, asociaciones y centros de acopio del Perú.
@@ -125,7 +125,7 @@ export const EventsView: React.FC = () => {
                     <span>Asistencia confirmada</span>
                   </span>
                 ) : (
-                  <span className="text-[11px] text-[#708077]">Inscripción abierta</span>
+                  <span className="text-xs text-[#708077]">Inscripción abierta</span>
                 )}
                 <button
                   type="button"

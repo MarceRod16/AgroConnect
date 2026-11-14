@@ -57,7 +57,10 @@ export const SupplierDashboard: React.FC<SupplierDashboardProps> = ({
       {/* Cabecera */}
       <div className="bg-white border border-[#DFE6E0] rounded-xl p-5 sm:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <div className="flex flex-wrap items-center gap-2">
+          <h2 className="text-xl font-bold font-display text-[#111814]">
+            {currentSupplierProfile?.organizationName ?? 'Panel del Proveedor'}
+          </h2>
+          <div className="flex flex-wrap items-center gap-2 mt-1">
             <p className="text-xs font-medium text-[#15803D]">
               {currentSupplierProfile
                 ? SUPPLIER_TYPE_LABELS[currentSupplierProfile.supplierType]
@@ -68,10 +71,7 @@ export const SupplierDashboard: React.FC<SupplierDashboardProps> = ({
               <StatusLabel variant={currentSupplierProfile.validationStatus} />
             )}
           </div>
-          <h2 className="text-xl font-bold font-display text-[#111814] mt-1">
-            {currentSupplierProfile?.organizationName ?? 'Panel del Proveedor'}
-          </h2>
-          <p className="text-xs text-[#526058] mt-1">
+          <p className="text-xs text-[#526058] mt-1.5">
             Publica lotes disponibles y participa en demandas industriales directas o consolidadas
             junto a otros productores.
           </p>
@@ -104,7 +104,7 @@ export const SupplierDashboard: React.FC<SupplierDashboardProps> = ({
           <p className="text-2xl font-bold font-mono-tabular text-[#111814] mt-1">
             {activeOffers.length}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Lotes publicados</p>
+          <p className="text-xs text-[#708077] mt-1">Lotes publicados</p>
         </div>
 
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-4">
@@ -112,7 +112,7 @@ export const SupplierDashboard: React.FC<SupplierDashboardProps> = ({
           <p className="text-2xl font-bold font-mono-tabular text-[#14532D] mt-1">
             {formatKgAsTonsOrKg(totalAvailableKg)}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Disponibilidad activa</p>
+          <p className="text-xs text-[#708077] mt-1">Disponibilidad activa</p>
         </div>
 
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-4">
@@ -120,15 +120,15 @@ export const SupplierDashboard: React.FC<SupplierDashboardProps> = ({
           <p className="text-2xl font-bold font-mono-tabular text-[#111814] mt-1">
             {compatibleBuyerIds}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Con demanda compatible</p>
+          <p className="text-xs text-[#708077] mt-1">Con demanda compatible</p>
         </div>
 
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-4">
           <p className="text-xs text-[#526058]">Solicitudes compatibles</p>
-          <p className="text-2xl font-bold font-mono-tabular text-[#B45309] mt-1">
+          <p className="text-2xl font-bold font-mono-tabular text-[#D97706] mt-1">
             {myOpportunities.length}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Directas y consolidadas</p>
+          <p className="text-xs text-[#708077] mt-1">Directas y consolidadas</p>
         </div>
 
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-4">
@@ -136,7 +136,7 @@ export const SupplierDashboard: React.FC<SupplierDashboardProps> = ({
           <p className="text-2xl font-bold font-mono-tabular text-[#111814] mt-1">
             {pendingContacts}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Intereses por responder</p>
+          <p className="text-xs text-[#708077] mt-1">Intereses por responder</p>
         </div>
       </section>
 

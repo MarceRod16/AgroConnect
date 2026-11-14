@@ -80,31 +80,31 @@ export const StatisticsView: React.FC = () => {
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-5">
           <p className="text-xs text-[#526058]">Oportunidades consolidadas</p>
-          <p className="text-2xl font-bold font-mono-tabular text-[#B45309] mt-1">
+          <p className="text-2xl font-bold font-mono-tabular text-[#D97706] mt-1">
             {consolidatedMatches.length}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Multi-proveedor activas</p>
+          <p className="text-xs text-[#708077] mt-1">Multi-proveedor activas</p>
         </div>
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-5">
           <p className="text-xs text-[#526058]">Oportunidades directas</p>
           <p className="text-2xl font-bold font-mono-tabular text-[#14532D] mt-1">
             {directMatches.length}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Cobertura 1:1</p>
+          <p className="text-xs text-[#708077] mt-1">Cobertura 1:1</p>
         </div>
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-5">
           <p className="text-xs text-[#526058]">Cobertura promedio</p>
           <p className="text-2xl font-bold font-mono-tabular text-[#15803D] mt-1">
             {avgCoverage}%
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Sobre oportunidades detectadas</p>
+          <p className="text-xs text-[#708077] mt-1">Sobre oportunidades detectadas</p>
         </div>
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-5">
           <p className="text-xs text-[#526058]">Contactos e intereses</p>
           <p className="text-2xl font-bold font-mono-tabular text-[#111814] mt-1">
             {state.interests.length}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Solicitudes comerciales registradas</p>
+          <p className="text-xs text-[#708077] mt-1">Solicitudes comerciales registradas</p>
         </div>
       </section>
 
@@ -118,7 +118,7 @@ export const StatisticsView: React.FC = () => {
                 Demanda vs. oferta disponible por cultivo (normalizado)
               </h3>
             </div>
-            <div className="flex items-center gap-3 text-[11px] text-[#526058]">
+            <div className="flex items-center gap-3 text-xs text-[#526058]">
               <span className="inline-flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-xs bg-[#D97706]" />
                 <span>Demanda</span>

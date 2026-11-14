@@ -90,14 +90,14 @@ export const WorkspaceLayout: React.FC<WorkspaceLayoutProps> = ({
             <X className="w-5 h-5" />
           </button>
         </div>
-        <p className="text-[11px] text-[#708077] mt-0.5 truncate">
+        <p className="text-xs text-[#708077] mt-0.5 truncate">
           {currentUser?.identification.tradeName || `${currentUser?.firstName} ${currentUser?.lastName}`}
         </p>
       </div>
 
       {/* Selector de rol sin cerrar sesión */}
       <div className="px-4 py-3 border-b border-[#DFE6E0] bg-[#F7F9F7]">
-        <p className="text-[11px] font-medium text-[#526058] mb-1.5">
+        <p className="text-xs font-medium text-[#526058] mb-1.5">
           {isDual ? 'Cambiar perfil activo' : 'Perfil de sesión'}
         </p>
         {isDual ? (
@@ -154,7 +154,7 @@ export const WorkspaceLayout: React.FC<WorkspaceLayoutProps> = ({
                 onSelectSection('settings');
                 setMobileMenuOpen(false);
               }}
-              className="text-[11px] font-medium text-[#526058] hover:text-[#14532D] underline cursor-pointer"
+              className="text-xs font-medium text-[#526058] hover:text-[#14532D] underline cursor-pointer"
             >
               Activar dual
             </button>
@@ -185,7 +185,7 @@ export const WorkspaceLayout: React.FC<WorkspaceLayoutProps> = ({
                 <span className="truncate">{label}</span>
               </span>
               {id === 'matching' && consolidatedCount > 0 && (
-                <span className="text-[11px] font-mono-tabular text-[#B45309] font-semibold shrink-0">
+                <span className="text-xs font-mono-tabular text-[#D97706] font-semibold shrink-0">
                   {consolidatedCount}
                 </span>
               )}
@@ -254,7 +254,7 @@ export const WorkspaceLayout: React.FC<WorkspaceLayoutProps> = ({
                 <h1 className="text-base sm:text-lg font-bold font-display text-[#111814] truncate">
                   {sectionTitle}
                 </h1>
-                <p className="text-[11px] text-[#708077] truncate">
+                <p className="text-xs text-[#708077] truncate">
                   {activeRole === 'buyer' ? 'Perfil Comprador' : 'Perfil Proveedor'} · Entorno de demostración (datos ficticios)
                 </p>
               </div>
@@ -264,7 +264,7 @@ export const WorkspaceLayout: React.FC<WorkspaceLayoutProps> = ({
               <button
                 type="button"
                 onClick={onQuickCreate}
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-white bg-[#14532D] hover:bg-[#0F3F22] rounded-lg transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-[#14532D] hover:bg-[#0F3F22] rounded-lg transition-colors whitespace-nowrap shrink-0 cursor-pointer"
               >
                 <FilePlus2 className="w-3.5 h-3.5" />
                 <span>{activeRole === 'buyer' ? 'Nueva solicitud' : 'Publicar oferta'}</span>

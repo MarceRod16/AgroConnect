@@ -590,7 +590,7 @@ export const AuthAndOnboardingView: React.FC<AuthAndOnboardingViewProps> = ({
                   >
                     <Building2 className="w-4 h-4 text-[#14532D] mb-2" />
                     <p className="text-xs font-bold text-[#111814]">Demo Comprador</p>
-                    <p className="text-[11px] text-[#526058] mt-0.5">
+                    <p className="text-xs text-[#526058] mt-0.5">
                       Alimentos del Valle · Caso Tomate 10 t
                     </p>
                   </button>
@@ -601,7 +601,7 @@ export const AuthAndOnboardingView: React.FC<AuthAndOnboardingViewProps> = ({
                   >
                     <Sprout className="w-4 h-4 text-[#15803D] mb-2" />
                     <p className="text-xs font-bold text-[#111814]">Demo Proveedor</p>
-                    <p className="text-[11px] text-[#526058] mt-0.5">
+                    <p className="text-xs text-[#526058] mt-0.5">
                       Coop. Valle de Cañete · 4 t Tomate
                     </p>
                   </button>
@@ -612,7 +612,7 @@ export const AuthAndOnboardingView: React.FC<AuthAndOnboardingViewProps> = ({
                   >
                     <Layers className="w-4 h-4 text-[#D97706] mb-2" />
                     <p className="text-xs font-bold text-[#111814]">Demo Cuenta Dual</p>
-                    <p className="text-[11px] text-[#526058] mt-0.5">
+                    <p className="text-xs text-[#526058] mt-0.5">
                       Comprador y Proveedor en un perfil
                     </p>
                   </button>
@@ -651,7 +651,7 @@ export const AuthAndOnboardingView: React.FC<AuthAndOnboardingViewProps> = ({
                             : 'border-[#DFE6E0] bg-[#F7F9F7] text-[#708077]'
                         }`}
                       >
-                        <div className="flex items-center justify-between text-[11px] font-semibold">
+                        <div className="flex items-center justify-between text-xs font-semibold">
                           <span>0{idx + 1}. {s.label}</span>
                           {isDone && <Check className="w-3.5 h-3.5" />}
                         </div>
@@ -840,7 +840,7 @@ export const AuthAndOnboardingView: React.FC<AuthAndOnboardingViewProps> = ({
                         <div className="flex flex-wrap items-center justify-between gap-2">
                           <div>
                             <p className="text-xs font-semibold text-[#111814]">¿Cuenta con RUC?</p>
-                            <p className="text-[11px] text-[#526058]">
+                            <p className="text-xs text-[#526058]">
                               No exigimos RUC a agricultores independientes; el perfil quedará en estado pendiente de validación.
                             </p>
                           </div>
@@ -1403,7 +1403,7 @@ export const AuthAndOnboardingView: React.FC<AuthAndOnboardingViewProps> = ({
                     </label>
                   </div>
 
-                  <p className="text-[11px] text-[#708077]">
+                  <p className="text-xs text-[#708077]">
                     Los campos avanzados (área exacta, calibre, humedad, certificaciones y flota) pueden
                     completarse ahora o posteriormente desde Configuración de Cuenta.
                   </p>

@@ -144,12 +144,12 @@ export const SmartMatchingView: React.FC<SmartMatchingViewProps> = ({
 
           <div className="flex items-center gap-4 shrink-0 border-t lg:border-t-0 pt-3 lg:pt-0 border-[#DFE6E0]">
             <div className="text-right">
-              <p className="text-[11px] text-[#708077]">Consolidadas</p>
-              <p className="text-xl font-bold font-mono-tabular text-[#B45309]">{consolidatedCount}</p>
+              <p className="text-xs text-[#708077]">Consolidadas</p>
+              <p className="text-xl font-bold font-mono-tabular text-[#D97706]">{consolidatedCount}</p>
             </div>
             <div className="h-8 w-px bg-[#DFE6E0]" />
             <div className="text-right">
-              <p className="text-[11px] text-[#708077]">Directas</p>
+              <p className="text-xs text-[#708077]">Directas</p>
               <p className="text-xl font-bold font-mono-tabular text-[#14532D]">{directCount}</p>
             </div>
           </div>
@@ -267,7 +267,7 @@ export const SmartMatchingView: React.FC<SmartMatchingViewProps> = ({
                   <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[#DFE6E0]">
                     <div className="flex items-center gap-2 text-xs font-semibold">
                       {isConsolidated ? (
-                        <span className="inline-flex items-center gap-1.5 text-[#B45309]">
+                        <span className="inline-flex items-center gap-1.5 text-[#D97706]">
                           <Layers className="w-4 h-4" />
                           <span>Consolidated Match · {match.contributions.length} proveedores</span>
                         </span>
@@ -299,10 +299,10 @@ export const SmartMatchingView: React.FC<SmartMatchingViewProps> = ({
                     </div>
 
                     <div className="text-right">
-                      <p className="text-[11px] text-[#708077]">Cobertura de volumen</p>
+                      <p className="text-xs text-[#708077]">Cobertura de volumen</p>
                       <p
                         className={`text-lg font-bold font-mono-tabular ${
-                          match.coveragePercent >= 100 ? 'text-[#15803D]' : 'text-[#B45309]'
+                          match.coveragePercent >= 100 ? 'text-[#15803D]' : 'text-[#D97706]'
                         }`}
                       >
                         {match.coveragePercent}%
@@ -373,9 +373,9 @@ export const SmartMatchingView: React.FC<SmartMatchingViewProps> = ({
                     </div>
 
                     {(match.missingKg > 0 || match.surplusKg > 0) && (
-                      <div className="mt-2.5 pt-2 border-t border-[#DFE6E0] flex items-center justify-between text-[11px] font-mono-tabular">
+                      <div className="mt-2.5 pt-2 border-t border-[#DFE6E0] flex items-center justify-between text-xs font-mono-tabular">
                         {match.missingKg > 0 ? (
-                          <span className="text-[#B45309]">
+                          <span className="text-[#D97706]">
                             Faltante por cubrir: {formatKgAsTonsOrKg(match.missingKg)}
                           </span>
                         ) : (
@@ -393,19 +393,19 @@ export const SmartMatchingView: React.FC<SmartMatchingViewProps> = ({
                   {/* Metadatos clave unificados */}
                   <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
                     <div>
-                      <p className="text-[11px] text-[#708077]">Calidad y fecha</p>
+                      <p className="text-xs text-[#708077]">Calidad y fecha</p>
                       <p className="font-medium text-[#111814] mt-0.5">
                         {match.request.quality} · {match.request.deliveryDate}
                       </p>
                     </div>
                     <div>
-                      <p className="text-[11px] text-[#708077]">Ubicación origen</p>
+                      <p className="text-xs text-[#708077]">Ubicación origen</p>
                       <p className="font-medium text-[#111814] mt-0.5 truncate" title={match.locationSummary}>
                         {match.locationSummary}
                       </p>
                     </div>
                     <div>
-                      <p className="text-[11px] text-[#708077]">Precio estimado</p>
+                      <p className="text-xs text-[#708077]">Precio estimado</p>
                       <p className="font-medium font-mono-tabular text-[#111814] mt-0.5">
                         {match.estimatedWeightedPricePerKgPen !== undefined
                           ? `S/ ${match.estimatedWeightedPricePerKgPen.toFixed(2)}/kg prom.`
@@ -418,7 +418,7 @@ export const SmartMatchingView: React.FC<SmartMatchingViewProps> = ({
                   </div>
 
                   {match.pendingConfirmations.length > 0 && (
-                    <div className="mt-3 flex items-start gap-2 text-[11px] text-[#B45309] bg-[#FEF3C7]/45 border border-[#FDE68A] rounded-lg px-3 py-2">
+                    <div className="mt-3 flex items-start gap-2 text-xs text-[#D97706] bg-[#FEF3C7]/45 border border-[#FDE68A] rounded-lg px-3 py-2">
                       <Clock className="w-3.5 h-3.5 shrink-0 mt-0.5" />
                       <span>
                         Pendiente de confirmación: {match.pendingConfirmations.join(' · ')}.
@@ -535,7 +535,7 @@ export const SmartMatchingView: React.FC<SmartMatchingViewProps> = ({
                           {c.offer.quality} · Variedad {c.offer.variety}
                         </span>
                       </p>
-                      <p className="text-[11px] text-[#708077]">
+                      <p className="text-xs text-[#708077]">
                         Disponibilidad: {c.offer.availableFrom} al {c.offer.availableTo} ·{' '}
                         {c.supplier.hasOwnTransport ? 'Con transporte propio' : 'Requiere coordinar flete'}
                       </p>
@@ -641,7 +641,7 @@ export const SmartMatchingView: React.FC<SmartMatchingViewProps> = ({
                     className="w-full px-3 py-2 text-sm border border-[#DFE6E0] rounded-lg focus:outline-none focus:border-[#14532D]"
                   />
                   <div className="flex flex-wrap items-center justify-between gap-3">
-                    <span className="text-[11px] text-[#708077]">
+                    <span className="text-xs text-[#708077]">
                       Se registrará un interés comercial sin comprometer inventario ni pagos.
                     </span>
                     <button

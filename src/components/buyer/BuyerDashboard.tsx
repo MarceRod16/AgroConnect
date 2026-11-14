@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { ArrowRight, GitMerge, Layers, Plus, ShoppingBag } from 'lucide-react';
+import { ArrowRight, GitMerge, Plus, ShoppingBag } from 'lucide-react';
 import { useAgroConnect } from '../../context/AgroConnectContext';
 import { formatKgAsTonsOrKg, normalizeToKg } from '../../services/matchingEngine';
 import { WorkspaceSection } from '../../types/agroconnect';
@@ -64,13 +64,13 @@ export const BuyerDashboard: React.FC<BuyerDashboardProps> = ({
       {/* Encabezado de bienvenida */}
       <div className="bg-white border border-[#DFE6E0] rounded-xl p-5 sm:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <p className="text-xs font-medium text-[#15803D]">
+          <h2 className="text-xl font-bold font-display text-[#111814]">
+            {currentBuyerProfile?.companyName ?? 'Panel del Comprador'}
+          </h2>
+          <p className="text-xs font-medium text-[#15803D] mt-1">
             {currentBuyerProfile?.subsector ?? 'Comprador Industrial'} ·{' '}
             {currentBuyerProfile?.plantLocation.department ?? 'Perú'}
           </p>
-          <h2 className="text-xl font-bold font-display text-[#111814] mt-0.5">
-            {currentBuyerProfile?.companyName ?? 'Panel del Comprador'}
-          </h2>
           <p className="text-xs text-[#526058] mt-1">
             Supervisa tus solicitudes activas, descubre combinaciones multi-proveedor y coordina
             abastecimiento agrícola.
@@ -104,7 +104,7 @@ export const BuyerDashboard: React.FC<BuyerDashboardProps> = ({
           <p className="text-2xl font-bold font-mono-tabular text-[#111814] mt-1">
             {activeRequests.length}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Publicadas por tu empresa</p>
+          <p className="text-xs text-[#708077] mt-1">Publicadas por tu empresa</p>
         </div>
 
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-4">
@@ -112,15 +112,15 @@ export const BuyerDashboard: React.FC<BuyerDashboardProps> = ({
           <p className="text-2xl font-bold font-mono-tabular text-[#14532D] mt-1">
             {compatibleSupplierIds}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">En ofertas evaluadas</p>
+          <p className="text-xs text-[#708077] mt-1">En ofertas evaluadas</p>
         </div>
 
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-4">
           <p className="text-xs text-[#526058]">Consolidaciones detectadas</p>
-          <p className="text-2xl font-bold font-mono-tabular text-[#B45309] mt-1">
+          <p className="text-2xl font-bold font-mono-tabular text-[#D97706] mt-1">
             {consolidatedMatches.length}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Alianzas multi-proveedor</p>
+          <p className="text-xs text-[#708077] mt-1">Alianzas multi-proveedor</p>
         </div>
 
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-4">
@@ -128,7 +128,7 @@ export const BuyerDashboard: React.FC<BuyerDashboardProps> = ({
           <p className="text-2xl font-bold font-mono-tabular text-[#111814] mt-1">
             {pendingContacts}
           </p>
-          <p className="text-[11px] text-[#708077] mt-1">Seguimientos iniciados</p>
+          <p className="text-xs text-[#708077] mt-1">Seguimientos iniciados</p>
         </div>
 
         <div className="bg-white border border-[#DFE6E0] rounded-xl p-4">
@@ -149,8 +149,7 @@ export const BuyerDashboard: React.FC<BuyerDashboardProps> = ({
         <section className="bg-white border border-[#D97706]/50 rounded-xl p-5 sm:p-6">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
             <div className="space-y-1.5">
-              <div className="flex items-center gap-2 text-xs font-semibold text-[#B45309]">
-                <Layers className="w-4 h-4" />
+              <div className="text-xs font-semibold text-[#D97706]">
                 <span>
                   {featuredConsolidated.type === 'consolidated'
                     ? 'Oportunidad destacada de Consolidación Multi-Proveedor'
