@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T23:37:00Z",
+  "title": "Design System: AgroConnect",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Deep Forest Green",
+        "canonical": "oklch(38% 0.12 145)",
+        "tonalRamp": ["#071f11", "#0f3f22", "#14532D", "#15803D", "#22c55e", "#86efac", "#dcfce7", "#f0fdf4"]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Deep Forest Hover",
+        "canonical": "oklch(30% 0.11 145)",
+        "tonalRamp": ["#05150b", "#0a2816", "#0F3F22", "#14532D", "#15803D", "#4ade80", "#bbf7d0", "#f0fdf4"]
+      },
+      "agro-green": {
+        "role": "secondary",
+        "displayName": "Field Agro Green",
+        "canonical": "oklch(52% 0.16 142)",
+        "tonalRamp": ["#052e16", "#14532D", "#15803D", "#16a34a", "#22c55e", "#4ade80", "#86efac", "#dcfce7"]
+      },
+      "accent-amber": {
+        "role": "accent",
+        "displayName": "Harvest Amber",
+        "canonical": "oklch(62% 0.17 65)",
+        "tonalRamp": ["#451a03", "#78350f", "#92400e", "#b45309", "#D97706", "#f59e0b", "#fbbf24", "#fef3c7"]
+      },
+      "accent-amber-soft": {
+        "role": "accent",
+        "displayName": "Harvest Amber Soft",
+        "canonical": "oklch(96% 0.05 85)",
+        "tonalRamp": ["#78350f", "#92400e", "#b45309", "#d97706", "#f59e0b", "#fcd34d", "#fde68a", "#FEF3C7"]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Mineral Canvas",
+        "canonical": "oklch(97% 0.005 140)",
+        "tonalRamp": ["#111814", "#202d25", "#384d40", "#526058", "#8c9b92", "#c4cec7", "#e7ece8", "#F7F9F7"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": ["#111814", "#2c3b32", "#526058", "#8b9c92", "#bcc7bf", "#e2e7e3", "#f4f6f4", "#FFFFFF"]
+      },
+      "subtle": {
+        "role": "neutral",
+        "displayName": "Subtle Surface",
+        "canonical": "oklch(95% 0.01 140)",
+        "tonalRamp": ["#111814", "#28372d", "#4b5d52", "#74867b", "#a5b4ab", "#d1dcd5", "#e5ece7", "#EFF4F0"]
+      },
+      "border-hairline": {
+        "role": "neutral",
+        "displayName": "Hairline Border",
+        "canonical": "oklch(91% 0.01 140)",
+        "tonalRamp": ["#111814", "#2d3c32", "#516357", "#76877c", "#a2b0a7", "#c8d3cb", "#DFE6E0", "#f3f6f4"]
+      },
+      "text-primary": {
+        "role": "neutral",
+        "displayName": "Deep Charcoal Text",
+        "canonical": "oklch(18% 0.01 150)",
+        "tonalRamp": ["#080c0a", "#111814", "#1e2922", "#35443a", "#54655a", "#798c80", "#a5b5ab", "#d9e2dc"]
+      },
+      "text-secondary": {
+        "role": "neutral",
+        "displayName": "Slate Green Secondary",
+        "canonical": "oklch(45% 0.02 150)",
+        "tonalRamp": ["#0e1410", "#1e2922", "#344339", "#526058", "#6c7d74", "#8d9e95", "#b4c2bb", "#dfe7e2"]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Muted Moss Caption",
+        "canonical": "oklch(56% 0.02 150)",
+        "tonalRamp": ["#131a16", "#28342d", "#45534a", "#5c6c62", "#708077", "#8e9e95", "#b3c1b9", "#dbe3df"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Hero",
+        "purpose": "Hero headline y mensajes centrales de impacto con text-wrap: balance."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Títulos de secciones principales sin muletas ornamentales ni badges."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Encabezados de tarjetas de lotes, módulos y tablas de datos."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto de lectura corrido, descripciones agronómicas y especificaciones de producto."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Formularios, filtros, botones y metadatos técnicos."
+      }
+    },
+    "shadows": [
+      {
+        "name": "flat-rest",
+        "value": "none",
+        "purpose": "Superficies en reposo delimitadas exclusivamente por bordes de 1px."
+      },
+      {
+        "name": "elevated-low",
+        "value": "0 4px 16px rgba(17, 24, 20, 0.06)",
+        "purpose": "Menús desplegables y modales contextuales."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Transiciones de foco e interacción rápida (150ms)."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Botón de acción principal con fondo verde bosque institucional.",
+      "html": "<button class=\"ds-btn-primary\">Probar Demo Comprador</button>",
+      "css": ".ds-btn-primary { background: #14532D; color: #FFFFFF; padding: 10px 20px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600; border: none; border-radius: 8px; cursor: pointer; transition: background 0.15s ease; } .ds-btn-primary:hover { background: #0F3F22; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Botón secundario sobre superficie blanca con borde sutil.",
+      "html": "<button class=\"ds-btn-secondary\">Probar Demo Proveedor</button>",
+      "css": ".ds-btn-secondary { background: #FFFFFF; color: #14532D; padding: 10px 20px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600; border: 1px solid #DFE6E0; border-radius: 8px; cursor: pointer; transition: border-color 0.15s ease; } .ds-btn-secondary:hover { border-color: rgba(20, 83, 45, 0.4); }"
+    },
+    {
+      "name": "Consolidation Block",
+      "kind": "card",
+      "refersTo": "card-surface",
+      "description": "Contenedor de sumatoria de consolidación multi-proveedor con números tabulares.",
+      "html": "<div class=\"ds-consolidation\"><div class=\"ds-consolidation-title\">Tomate industrial · 10 t</div><div class=\"ds-consolidation-math\">4 t + 3 t + 3 t = 10 t</div><div class=\"ds-consolidation-meta\">Cañete · Huaral · Chincha</div></div>",
+      "css": ".ds-consolidation { background: #EFF4F0; border: 1px solid #DFE6E0; border-radius: 12px; padding: 20px; font-family: 'DM Sans', sans-serif; } .ds-consolidation-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 700; color: #111814; } .ds-consolidation-math { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; font-size: 20px; font-weight: 700; color: #14532D; margin: 8px 0 4px 0; } .ds-consolidation-meta { font-size: 13px; color: #526058; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Agrarian Exchange (La Mesa Agroindustrial)",
+    "overview": "AgroConnect es una plataforma de negociación y consolidación B2B de alto rigor técnico para el mercado agroalimentario peruano. Su identidad visual debe transmitir la solidez de una bolsa de productos agrarios, la precisión de una orden de compra industrial y la autenticidad del campo productivo. El entorno gráfico rechaza de plano la estética de plantilla genérica de startup tecnológica y adopta un lenguaje visual utilitario, sobrio y de alta densidad de información real.",
+    "keyCharacteristics": [
+      "Rigor tipográfico con Plus Jakarta Sans y DM Sans.",
+      "Paleta botánica y mineral con verdes bosque y fondos cálidos.",
+      "Espacio en blanco nítido y arquitectura espacial asimétrica.",
+      "Datos tabulares precisos con JetBrains Mono tabular-nums.",
+      "Cero clichés de IA generativa (sin degradados púrpura/cian, sin badges repetitivos, sin cuadrículas de 3 tarjetas con íconos Lucide, sin mayúsculas espaciadas de relleno, sin prueba social falsa)."
+    ],
+    "rules": [
+      {
+        "name": "The Anti-AI Gradient Rule",
+        "body": "Queda terminantemente prohibido el uso de degradados lineales o radiales genéricos (especialmente combinaciones púrpura/cian, violeta/magenta o azul neón), así como el texto con relleno en degradado.",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Eyebrow Rule",
+        "body": "Queda terminantemente prohibido colocar 'eyebrow badges' (píldoras de colores, cintillos o etiquetas flotantes) inmediatamente encima de cada encabezado. Los títulos tienen peso y presencia suficientes para comandar el flujo visual.",
+        "section": "components"
+      },
+      {
+        "name": "The Anti-Grid Rule",
+        "body": "Prohibición explícita de la clásica cuadrícula de 3 columnas donde cada columna es una tarjeta idéntica con un ícono Lucide en una caja redondeada, un título de 3 palabras y dos líneas de texto genérico.",
+        "section": "layout"
+      },
+      {
+        "name": "The No-Filler-Uppercase Rule",
+        "body": "Se prohíbe terminantemente el uso de microetiquetas de relleno en mayúsculas espaciadas (FEATURES, CÓMO FUNCIONA, NUESTRO PROCESO). Los encabezados deben enunciarse en formato oración o título natural.",
+        "section": "typography"
+      },
+      {
+        "name": "The Zero Fake Social Proof Rule",
+        "body": "Prohibición absoluta de testimonios ficticios, clientes inventados, valoraciones de 5 estrellas fabricadas o cifras de vanidad no respaldadas por el software.",
+        "section": "overview"
+      },
+      {
+        "name": "The Crisp Whitespace Rule",
+        "body": "El espacio en blanco es un elemento estructural activo. Mayor separación sobre los encabezados que bajo ellos (mínimo 2:1) y 64px a 80px entre secciones.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Hairline Rule",
+        "body": "Las superficies en reposo no llevan sombras difusas ni desenfoque de vidrio como ornamento; la jerarquía se establece con fondos contrastantes y bordes filosos de 1px.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Priorizar tipografía intencional con escala definida (Plus Jakarta Sans en títulos, DM Sans en cuerpo y JetBrains Mono en cifras).",
+      "Construir una jerarquía visual real mediante contraste de tamaño, peso tipográfico y ritmo espacial.",
+      "Mantener espaciado en blanco nítido y generoso (64px entre secciones, mayor separación sobre títulos que bajo ellos).",
+      "Utilizar la paleta botánica y mineral oficial (#14532D, #15803D, #F7F9F7, #FFFFFF, #DFE6E0).",
+      "Representar la consolidación y el Smart Matching con estructuras de datos reales: ecuaciones de suma de lotes, tablas comparativas y desgloses de 10 variables.",
+      "Mostrar evidencia auténtica del sistema: datos de lotes y cooperativas reales del código (src/data/), respetando la honestidad del prototipo MVP."
+    ],
+    "donts": [
+      "Usar degradados genéricos púrpura/cian, violeta/magenta o azul neón en fondos, botones o textos.",
+      "Colocar 'eyebrow badges' o etiquetas tipo píldora encima de los títulos principales en cada sección.",
+      "Estructurar secciones con cuadrículas de 3 tarjetas idénticas con íconos genéricos de Lucide en esquinas redondeadas.",
+      "Emplear microetiquetas en mayúsculas espaciadas (letter-spacing: 0.15em) para rellenar encabezados.",
+      "Inventar prueba social falsa: testimonios ficticios de agricultores, citas inventadas, sellos de 5 estrellas o logotipos de clientes imaginarios.",
+      "Usar sombras pesadas, halos de brillo de color ni fondos de vidrio borroso como decoración.",
+      "Esconder datos agronómicos relevantes detrás de jerga de marketing o metáforas visuales vacías."
+    ]
+  }
+}
